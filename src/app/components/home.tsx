@@ -23,14 +23,13 @@ export default function Home({ dateTime, handleRevalidate }: Props) {
                 Ir a la pagina de tiempo - link
             </Link> 
 
-            {/* // ! SOLUCION NO OPTIMA */}
-            {/* 
-            <button className='bg-white hover:bg-blue-300 text-black font-bold py-2 px-4 rounded' onClick={() => {
+
+            {/* <button className='bg-white hover:bg-blue-300 text-black font-bold py-2 px-4 rounded' onClick={() => {
                router.push('/time')
                router.refresh()
             }}>
                 Ir a la pagina de tiempo
-            </button> */}
+            </button>  */}
 
             
             <button className='bg-white hover:bg-blue-300 text-black font-bold py-2 px-4 rounded' onClick={() => {
