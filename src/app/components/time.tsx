@@ -21,7 +21,7 @@ export default function Time({ dateTime, handleRevalidate }: Props) {
             <p>{dateTime}</p>
             
             {/* // ! DOBLE PETICION, FUNCIONA IGUAL QUE EL BUTTON  */}
-            <Link href="/" onClick={() => {handleRevalidate && handleRevalidate()}} className='bg-white hover:bg-blue-300 text-black font-bold py-2 px-4 rounded'>
+            <Link href="/" onClick={() => {handleRevalidate()}} className='bg-white hover:bg-blue-300 text-black font-bold py-2 px-4 rounded'>
                 Ir a la pagina principal - link
             </Link> 
             
@@ -36,10 +36,10 @@ export default function Time({ dateTime, handleRevalidate }: Props) {
             </button> */}
 
             {/* // ! DOBLE PETICION */}
-            <button onClick={() => {
-                    handleRevalidate()
-                    router.push('/')
-                }} className='bg-white hover:bg-blue-300 text-black font-bold py-2 px-4 rounded'>
+            <button className='bg-white hover:bg-blue-300 text-black font-bold py-2 px-4 rounded' 
+                onClick={() => { 
+                    handleRevalidate() 
+                    router.push('/') }}>
                 Ir a la pagina principal - boton
             </button>
 

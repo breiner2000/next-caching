@@ -19,7 +19,7 @@ export default function Home({ dateTime, handleRevalidate }: Props) {
             <p>Esta es la pagina principal</p>
             <p>{dateTime}</p>
 
-            <Link href="/time" onClick={() => {handleRevalidate && handleRevalidate()}} className='bg-white hover:bg-blue-300 text-black font-bold py-2 px-4 rounded'>
+            <Link href="/time" onClick={() => {handleRevalidate()}} className='bg-white hover:bg-blue-300 text-black font-bold py-2 px-4 rounded'>
                 Ir a la pagina de tiempo - link
             </Link> 
 
