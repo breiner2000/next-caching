@@ -17,6 +17,7 @@ export default async function TimePage() {
 
   return (
     <Time dateTime={datetime} handleRevalidate={revalidate} />
+
   )
 }
 
