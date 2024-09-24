@@ -5,15 +5,16 @@ import { revalidatePath, revalidateTag } from 'next/cache'
 
 export default async function TimePage() {
 
-    const time = await fetchTime()
+  const time = await fetchTime()
 
-    const { datetime } = time
+  const { datetime } = time
 
-    async function revalidate() { 
-        "use server"
-        // revalidatePath('/')
-        // revalidateTag('time')
-    }
+  // !EXPERIMENTAL EN NEXT 13 Y DOBLE PETICION EN NEXT 14
+  async function revalidate() {
+    "use server"
+    // revalidatePath('/')
+    // revalidateTag('time')
+  }
 
   return (
     <Time dateTime={datetime} handleRevalidate={revalidate} />
