@@ -20,8 +20,8 @@ export default function Home({ dateTime, handleRevalidate }: Props) {
                 <p>{dateTime}</p>
 
                 {/* // ! NO FUNCIONA */}
-                <Link href="/" onClick={() => { }} className='bg-white hover:bg-blue-300 text-black font-bold py-2 px-4 rounded'>
-                    Ir a la pagina de tiempo - normal
+                <Link href="/time" onClick={() => { }} className='bg-white hover:bg-blue-300 text-black font-bold py-2 px-4 rounded'>
+                    Ir a la pagina de tiempo - normal cached
                 </Link>
 
                 {/* // ! DOBLE PETICION, FUNCIONA IGUAL QUE EL BUTTON CON PUSH */}
